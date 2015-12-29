@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lvMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:listSelector="@color/selected_task" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="#D6D6D6" >
+
+        <ImageButton
+            android:id="@+id/arrow_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/buttonshape"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrowup" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/add_button"
+            android:layout_toRightOf="@+id/arrow_down"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/edit_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonshape"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/edit" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/buttonshape"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rplus" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/arrow_up"
+            android:layout_toRightOf="@+id/add_button"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/remove_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonshape"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/urn" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/arrow_down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/buttonshape"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrowdown" />
+    </RelativeLayout>
+
+</LinearLayout>
